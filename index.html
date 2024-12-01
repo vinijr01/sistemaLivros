@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;0,400;0,500;0,600;&display=swap" rel="stylesheet">
+    <title>Esse eu já Lí</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="center">
+        <a href="index.html" class="logo">
+            <i class="logomarca"></i>
+        </a>
+        <ul class="menu">
+            <li class="menu__li">
+                <a href="index.html" class="menu__link">Home</a>
+            </li>
+            <li class="menu__li">
+                <a href="perfil.html" class="menu__link" target="_self" rel="next">Perfil</a>
+            </li>
+            <li class="menu__li">
+                <a href="login.html" class="bt-logout">Logout</a>
+            </li>
+        </ul>
+        <div class="clear"></div>
+
+        <div class="apresentacao__box"></div>
+            <div class="apresentacao__descricao">
+                <h2 class="title-apresentacao">Transforme sua <strong>Leitura</strong></h2>
+                <p class="frase-apresentacao">Explore um universo de histórias fascinantes que inspiram, emocionam e despertam novas perspectivas! Cada página é uma porta aberta para a imaginação e o conhecimento.</p>
+                <a href="#livros" class="bt-azul">Veja Mais!</a> <!--Definir que caia em sinopses-->
+            </div>
+            <div class="apresentacao__imagem_lendo">
+                <img src="imagens/pessoa_lendo.jpg" alt="Imagem de pessoa lendo">
+            </div>
+            <div class="clear"></div>
+
+            <h2 class="apresentacao__texto2">Veja abaixo a Coleção!</h2>
+
+        <div class="livros">
+            <div class="sinopses">
+
+            </div>
+
+            <div class="colecao">
+                <section id="livros">
+                    <h3 class="title-apresetacao2">A seleção</h3>
+                    <p class="Descricao__1">Autor: Kiera Cass</p>
+                    <a href="#" class="sinopse">Sinopse</a>
+                    <img src="imagens/A seleção - Kiera Cass.jpg" alt="Livro: A seleção" class="imagem__1">
+                    <p></p>
+                    <button class="marcar-como-lido">Marcar como lido</button>
+                </section>
+            </div>
+
+            <script>
+                // Variáveis globais para pontos e troféus
+                let pontos = 0;
+                let trofeus = 0;
+              
+                // Função para atualizar a pontuação e os troféus na página de perfil
+                function atualizarPontuacao() {
+                  // Atualiza o contador de troféus e pontos
+                  document.getElementById('contador-trofeus').textContent = trofeus;
+                  document.getElementById('contador-pontos').textContent = pontos;
+                }
+              
+                // Obter todos os botões "Marcar como lido" na página de livros
+                const botoes = document.querySelectorAll('.marcar-como-lido');
+              
+                botoes.forEach(function(botao) {
+                  botao.addEventListener('click', function() {
+                    // Encontrar o contador de leituras e o troféu do livro
+                    const contador = this.nextElementSibling.querySelector('.contador');
+                    const trofeu = this.nextElementSibling.querySelector('.trofeu');
+              
+                    // Obter o valor atual do contador de leituras e incrementar
+                    let count = parseInt(contador.textContent);
+                    count += 1;
+                    contador.textContent = count;
+              
+                    // Verificar se o contador atingiu 5
+                    if (count % 5 === 0) {
+                      // Mostrar o troféu no livro
+                      trofeu.style.display = 'block';
+              
+                      // Incrementar os pontos e troféus
+                      pontos += 10;  // A cada 5 leituras, o usuário ganha 10 pontos
+                      trofeus += 1;   // A cada 5 leituras, o usuário ganha 1 troféu
+              
+                      // Atualizar a pontuação e troféus na página de perfil
+                      atualizarPontuacao();
+                    }
+                  });
+                });
+              </script>
+
+            <div class="colecao">
+                <h3 class="title-apresetacao3">Alice no País das Maravilhas</h3>
+                <p class="Descricao__1">Autor: Charlie Donlea</p>
+                <a href="#" class="sinopse">Sinopse</a>
+                <img src="imagens/Alice no Pais das Maravílhas - Lewis Garroll.jpg" alt="Livro: Alice no País das Maravílhas">
+                <button class="marcar-como-lido">Marcar como lido</button>
+            </div>
+
+
+            <div class="colecao">
+                <h3 class="title-apresetacao3">As Vantagens de Ser Invisível</h3>
+                <p class="Descricao__1">Autor: Stephen Ohbosky</p>
+                <a href="#" class="sinopse">Sinopse</a>
+                <img src="imagens/As Vantagens de Ser Invisível - Stephen Ohbosky.jpg" alt="As Vantagens de Ser Invisível">
+                <button class="marcar-como-lido">Marcar como lido</button>
+            </div>
+
+            <div class="colecao">
+                <h3 class="title-apresetacao3">Coraline</h3>
+                <p class="Descricao__1">Autor: Chris Riddell</p>
+                <a href="#" class="sinopse">Sinopse</a>
+                <img src="imagens/Coraline - Chris Riddell.jpg" alt="Livro: Coraline">
+                <button class="marcar-como-lido">Marcar como lido</button>
+            </div>
+
+            <div class="colecao">
+                <h3 class="title-apresetacao3">Fahrenheint</h3>
+                <p class="Descricao__1">Autor: Ray Bradbyry</p>
+                <a href="#" class="sinopse">Sinopse</a>
+                <img src="imagens/Fahrenheint - Ray Bradbyry.jpg" alt="Livro: Fahrenheint">
+                <button class="marcar-como-lido">Marcar como lido</button>
+            </div>
+
+            <div class="colecao">
+                <h3 class="title-apresetacao3">Harry Potter</h3>
+                <p class="Descricao__1">Autor: J.K Rowling</p>
+                <a href="#" class="sinopse">Sinopse</a>
+                <img src="imagens/Harry Poter - J.K Rowling.jpg" alt="Livro: Harry Potter">
+                <button class="marcar-como-lido">Marcar como lido</button>
+            </div>
+
+            <div class="colecao">
+                <h3 class="title-apresetacao3">O Vilarejo</h3>
+                <p class="Descricao__1">Autor: Raphael Montes</p>
+                <a href="#" class="sinopse">Sinopse</a>
+                <img src="imagens/O Vilarejo - Raphael Montes.jpg" alt="Livro: O vilarejo">
+                <button class="marcar-como-lido">Marcar como lido</button>
+            </div>
+
+            <div class="colecao">
+                <h3 class="title-apresetacao3">Pessoas Normais</h3>
+                <p class="Descricao__1">Autor: Sally Rooney</p>
+                <a href="#" class="sinopse">Sinopse</a>
+                <img src="imagens/Pessoas Normais - Sally Rooney.jpg" alt="Livro: Pessoas Normais">
+                <button class="marcar-como-lido">Marcar como lido</button>
+            </div>
+            <div class="colecao">
+                <h3 class="title-apresetacao3">Por Lugares Incríveis</h3>
+                <p class="Descricao__1">Autor: Jennifer Niven</p>
+                <a href="#" class="sinopse">Sinopse</a>
+                <img src="imagens/Por Lugares Incríveis - Jennifer Niven.jpg" alt="Livro: Por Lugares Incríveis">
+                <button class="marcar-como-lido">Marcar como lido</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+

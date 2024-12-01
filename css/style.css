@@ -1,0 +1,202 @@
+/* reset .css, para deixar o layout correto para todos os navegadores*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Definição de Logomarca */
+.logomarca {
+    width: 140px;
+    height: 33px;
+    background: url("../imagens/logomarca01.png") no-repeat 0 0;
+    display: block;
+}
+
+/* Movendo os botões para a esquerda */
+.logo {
+    float: left;
+}
+
+.menu {
+    float: right;
+}
+
+.menu__li {
+    float: left;
+	margin: 0 10px;
+}
+
+.menu__link {
+	color: #0000ff;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+/* limpando o float, para menores problemas futuros*/
+
+.clear {
+	clear: both;
+}
+
+/* Da classe center, foi definido 1100px para centralizar da forma desejada*/
+.center {
+	width: 1110px;
+	margin: 0 auto;
+	padding-top: 40px
+}
+
+/* Difinindo a borda do botão de log-out */
+.bt-logout {
+	border: 2px solid #0000ff;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px 30px;
+	border-radius: 5px;
+	margin-left: 30px;
+}
+
+.apresentacao__box{
+	padding-top: 70px;
+}
+
+.apresentacao__descricao{
+	width: 50%;
+	float: left;
+	padding-top: 50px;
+}
+
+.apresentacao__imagem_lendo{
+	width: 50%;
+	float: left;
+}
+
+.title-apresentacao{
+	color: #3B3322;
+	font-size: 44px;
+	line-height: 44px;
+}
+
+.title-apresentacao strong{
+	font-weight: 600;
+}
+
+.frase-apresentacao{
+	color: #544B37;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 40px 0 30px 0;
+}
+
+.bt-azul{
+	background: #0000ff;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 14px 30px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.apresentacao__texto2 {
+	text-align: center;
+	font-size: 40px;
+	padding: 70px 110px;
+	font-weight: 600;
+	color: #363021;
+}
+
+.title-apresetacao2{
+	font-size: 30px;
+	font-weight: 500;
+	color: #3B3322;
+}
+
+.title-apresetacao3 {
+	font-size: 30px;
+	padding: 60px 0 0 0;
+	color: #3B3322;
+}
+
+.imagem__1{
+	padding-top: 20px;
+	border-radius: 10px;
+}
+
+.Descricao__1{
+	padding: 10px 0 10px 0;
+	color: #1b1914;
+}
+
+.marcar-como-lido {
+	background-color: #c9c9c9;
+	color: #000000;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 8px 20px;
+	border-radius: 5px;
+	display: block;
+	width: 130px;
+	margin-top: 10px;
+
+}
+
+.sinopse{
+	background-color: #c9c9c9;
+	color: #000000;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 8px 20px;
+	border-radius: 5px;
+	display: block;
+	width: 50px;
+	margin: 10px;
+}

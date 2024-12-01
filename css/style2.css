@@ -1,0 +1,297 @@
+/* reset .css, para deixar o layout correto para todos os navegadores*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html, body {
+	font-family: 'Poppins', sans-serif;
+}
+
+/* Definição de Logomarca */
+.logomarca {
+    width: 140px;
+    height: 33px;
+    background: url("../imagens/logomarca01.png") no-repeat 0 0;
+    display: block;
+}
+
+/* Movendo os botões para a esquerda */
+.logo {
+    float: left;
+}
+
+.menu {
+    float: right;
+}
+
+.menu__li {
+    float: left;
+	margin: 0 10px;
+}
+
+.menu__link {
+	color: #0000ff;
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 16px;
+}
+
+/* limpando o float, para menores problemas futuros*/
+
+.clear {
+	clear: both;
+}
+
+/* Da classe center, foi definido 1100px para centralizar da forma desejada*/
+.center {
+	width: 1110px;
+	margin: 0 auto;
+	padding-top: 40px
+}
+
+/* Difinindo a borda do botão de log-out */
+.bt-logout {
+	border: 2px solid #0000ff;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px 30px;
+	border-radius: 5px;
+	margin-left: 30px;
+}
+
+.apresentacao__box{
+	padding-top: 70px;
+}
+
+.apresentacao__descricao{
+	width: 50%;
+	float: left;
+	padding-top: 50px;
+}
+
+.apresentacao__imagem_lendo{
+	width: 50%;
+	float: left;
+}
+
+.title-apresentacao{
+	color: #3B3322;
+	font-size: 44px;
+	line-height: 44px;
+}
+
+.title-apresentacao strong{
+	font-weight: 600;
+}
+
+.frase-apresentacao{
+	color: #544B37;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 40px 0 30px 0;
+}
+
+.bt-azul{
+	background: #0000ff;
+	color: #ffffff;
+	font-size: 16px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 14px 30px;
+	border-radius: 5px;
+	display: inline-block;
+}
+
+.container{
+    position: relative; /* Torna o contêiner um elemento de referência para o posicionamento absoluto */
+    min-height: 100vh;
+}
+
+.perfil{
+    position: absolute;
+    top: -29%;
+    right: -2%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    overflow: hidden; /* Garante que a imagem fique dentro do círculo */
+    border-radius: 50%; /* Círculo */
+    border: 3px solid #4CAF50;
+    display:  flex;
+    justify-content: center;
+}
+
+.imagem-perfil{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.apresentacao__ranking{
+    position: absolute;
+    top: -30%;
+    right: 5%;
+    font-weight: 500;
+}
+
+.titulo__ranking{
+    color: #544B37;
+    font-size: 40px;
+    line-height: 24px;
+}
+
+.titulo__ranking strong{
+    font-weight: 600;
+}
+
+.pontuacao{
+    width: 50%;
+}
+
+.pontos{
+    color: #3B3322;
+    top: 30%;
+    right: 10%;
+	font-size: 40px;
+	line-height: 44px;
+	padding: 80px 0 30px 0;
+
+}
+
+.lista__ranking{
+    position: absolute;
+    list-style-type: none;
+    padding: 0; /* Remove o padding default da lista */
+    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    display: block;
+    flex-wrap: wrap; /* Permite quebra de linha caso a lista ocupe mais espaço */
+
+}
+
+.lista__ranking li{
+    background-color: #a5a5f5;
+    border-radius: 8px;
+    padding: 5px 8px;
+    margin-right: 400px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;  /* Transições suaves para efeitos de hover */
+    text-align: center;
+}
+
+.trofeus img{
+    display: block;
+    margin-bottom: 10px;
+
+}
+.trofeus{
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 45px;
+    margin-bottom: 10px;
+    margin-left: 85px;
+}
+
+.trofeu__grande{
+    position: absolute;
+    top: 27%;
+    left: 6%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    overflow: hidden; /* Garante que a imagem fique dentro do círculo */
+    border-radius: 50%; /* Círculo */
+    display:  flex;
+    justify-content: center;
+}
+
+.trofeu__valor{
+    position: absolute;
+    top: 29%;
+    left: 11%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    overflow: hidden; /* Garante que a imagem fique dentro do círculo */
+    border-radius: 50%; /* Círculo */
+    display:  flex;
+    justify-content: center;
+    font-size: 35px;
+}
+
+.ganho{
+    position: absolute;
+    top: 40%;
+    left: 0%;
+    transform: translateY(-50%);
+	background: #eeff00;
+	color: #000000;
+	font-size: 20px;
+	font-weight: 600;
+	padding: 5px 20px;
+	border-radius: 5px;
+	display: inline-block;
+    text-align: center;
+}
+
+.ganho__valor{
+    position: absolute;
+    top: 41.5%;
+    left: 11%;
+    transform: translateY(-50%);
+    width: 60px;
+    height: 60px;
+    overflow: hidden; /* Garante que a imagem fique dentro do círculo */
+    border-radius: 50%; /* Círculo */
+    display:  flex;
+    justify-content: center;
+    font-size: 35px;
+}
